@@ -1,13 +1,13 @@
 ## NGINX Dockerfile Install via nginx.org
 
-Modify NGINX version ENV variable in Dockerfile
-```
-ENV nginxVersion "1.X.XX"
-```
-
 Clone
 ```
 git clone git@github.com:kmjones1979/docker-nginx-compiled.git
+```
+
+Modify NGINX version ENV variable in Dockerfile
+```
+ENV nginxVersion "1.X.XX"
 ```
 
 Build
