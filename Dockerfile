@@ -2,7 +2,7 @@ FROM centos:centos7
 
 MAINTAINER "Kevin Jones - kevin@nginx.com"
 
-ENV nginxVersion "1.9.4"
+ENV nginxVersion "1.9.15"
 ENV tmp "/tmp/nginx/src"
 
 # create nginx group and user
@@ -27,7 +27,7 @@ RUN cd $tmp/nginx-$nginxVersion && ./configure \
     --lock-path=/var/run/nginx.lock \
     --user=nginx \
     --group=nginx \
-    --with-http_spdy_module \
+    --with-http_v2_module \
     --with-http_ssl_module \
     --with-http_realip_module \
     --with-http_addition_module \
